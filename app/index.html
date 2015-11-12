@@ -5,6 +5,7 @@
 	<title>MEDIATRENDS - SPECS</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 	<link rel="stylesheet" href="css/icon.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="css/landing-specs.css">
 	<script src="js/jquery.min.js"></script>
@@ -23,8 +24,10 @@
 </head>
 <body>
 	<div class="container-All">
-		<div class="logotype-mediatrends">
-			<a href="http://mediatrends.cl/" target="_blank">
+
+		<section class="sectionMt mt-logotipe">
+			<div class="logotype-mediatrends">
+				<a href="http://mediatrends.cl/" target="_blank">
 				<svg viewBox="0 0 792 656.856">
 				<g id="mediatrends-logo">
 					<g>
@@ -653,221 +656,278 @@
 					</g>
 				</g>
 				</svg>
-			</a>
-		</div>
-		<div class="title-head">
-			<div class="additional-text">Formatos y</div>
-			<h1>SPECS</h1>
-			<div class="line-div"></div>
-		</div>
-		<div class="content-specs">
-			<div class="box-specs">
-				<div class="title-box trama-md trama-bg-animation accordion" id="specs-one">
-					<div class="specs-titlebox ">Display desktop</div>
-					<div class="icon-box"><i class="icon ion-android-add"></i></div>
-				</div>
-				<div class="contentespecs-box" id="specs-one-cont">
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>INFORMACIÓN:</mark>
-						</div>
-						<div class="content-text">
-								<p>Trabajamos con formatos tradicionales IAB tales como: <mark>728×90</mark>,<mark>300×250</mark>,<mark>300×600</mark>,<mark>970×90</mark>,<mark>120×600</mark> y mucho más.</p>
-								<p>Archivos finales que se deben enviar: <mark>GIF</mark>, <mark>ZIP</mark>, <mark>HTML</mark>, <mark>JPG(respaldo)</mark>, fuentes utilizadas.</p>
+				</a>
+			</div>
+		</section>
+
+		<section class="sectionMt section-specs">
+			<div class="title-head">
+				<div class="additional-text">Formatos y</div>
+				<h1>SPECS</h1>
+				<div class="line-div"></div>
+			</div>
+
+			<div class="content-specs">
+
+				<div class="box-specs">
+					<div class="title-box trama-md trama-bg-animation accordion" id="specs-one">
+						<div class="specs-titlebox ">Display desktop</div>
+						<div class="icon-box"><i class="icon ion-android-add"></i></div>
+					</div>
+					<div class="contentespecs-box" id="specs-one-cont">
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>INFORMACIÓN:</mark>
 							</div>
-						<div class="title-inside">
-							<mark>ESPECIFICACIONES:</mark>
-						</div>
-						<div class="content-text">
-							<p><mark>FORMATOS:</mark> JPG PNG GIF ZIP HTML</p>
-							<p><mark>PESO:</mark> Carga Sync: 150kb - Carga Async: 200kb</p>
+							<div class="content-text">
+									<p>Trabajamos con formatos tradicionales IAB tales como: <mark>728×90</mark>,<mark>300×250</mark>,<mark>300×600</mark>,<mark>970×90</mark>,<mark>120×600</mark> y mucho más.</p>
+									<p>Archivos finales que se deben enviar: <mark>GIF</mark>, <mark>ZIP</mark>, <mark>HTML</mark>, <mark>JPG(respaldo)</mark>, fuentes utilizadas.</p>
+							</div>
+							<div class="title-inside">
+								<mark>ESPECIFICACIONES:</mark>
+							</div>
+							<div class="content-text">
+								<p><mark>FORMATOS:</mark> JPG PNG GIF ZIP HTML</p>
+								<p><mark>PESO:</mark> Carga Sync: 150kb - Carga Async: 200kb</p>
 
-							<p><mark>Pieza original:</mark></p>
+								<p><mark>Pieza original:</mark></p>
 
-							<p>
+								<p>
 
-Peso: max. Sync 150kb - Async 200kb <br>
-Formato de entrega: HTML5 - ZIP(assets y html)<br>
-Estilos: CSS Inline - JS Embed<br>
-Archivos externos: JPG - GIF - PNG - SVG Code o Base64<br>
-<br>
-Pieza Google Web Developer:<br>
-Paquete con el contenido.<br>
-<br>
-Pieza Rich Media - Third Party Tag:<br>
-Esta debe venir solo por tamaños especificados y solo una URL de campaña.
+									Peso: max. Sync 150kb - Async 200kb <br>
+									Formato de entrega: HTML5 - ZIP(assets y html)<br>
+									Estilos: CSS Inline - JS Embed<br>
+									Archivos externos: JPG - GIF - PNG - SVG Code o Base64<br>
+									<br>
+									Pieza Google Web Developer:<br>
+									Paquete con el contenido.<br>
+									<br>
+									Pieza Rich Media - Third Party Tag:<br>
+									Esta debe venir solo por tamaños especificados y solo una URL de campaña.
 
-</p>
-						</div>
+								</p>
+							</div>
 
-						<div class="content-text">
-							<p><mark>Observaciones:</mark></p>
-							<p>
-En caso de trabajar con SVG, incrustar solo el código, no adjuntar como archivo.<br>
-Se rechazan todas las piezas que llamen archivos externos.<br>
-Si se trabaja con librerías tales como: jQuery, plugins, etc. incrustar en el archivo y no llamar desde afuera, también deben ejecutar condiciones JS para no hacer doble llamado a las librerías.
-</p>
+							<div class="content-text">
+								<p><mark>Observaciones:</mark></p>
+								<p>
+									En caso de trabajar con SVG, incrustar solo el código, no adjuntar como archivo.<br>
+									Se rechazan todas las piezas que llamen archivos externos.<br>
+									Si se trabaja con librerías tales como: jQuery, plugins, etc. incrustar en el archivo y no llamar desde afuera, también deben ejecutar condiciones JS para no hacer doble llamado a las librerías.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>ADS:</mark>
-						</div>
-						<div class="image-info">
-							<img src="img/desktop-block.svg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="box-specs">
-				<div class="title-box trama-md accordion" id="specs-two">
-					<div class="specs-titlebox">Display Alto Impacto</div>
-					<div class="icon-box"><i class="icon ion-android-add"></i></div>
-				</div>
-				<div class="contentespecs-box" id="specs-two-cont">
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>INFORMACIÓN:</mark>
-						</div>
-						<div class="content-text">
-							<p>Alto impacto considera formatos tales como <mark>ITT</mark>,<mark>PushDown</mark>, <mark>Masthead</mark>, <mark>Video</mark>, <mark>800x550</mark> y más.</p>
-							<p>En el caso de <mark>ITT</mark> estos deben venir con la imagen de cerrar aparte en <mark>PNG</mark> o <mark>SVG</mark>.</p>
-							<p>Los <mark>Videos</mark> deben estar en Youtube o enviar el formato original (mp4, mov, etc.) para su posterior almacenamiento.</p>
-						</div>
-						<div class="title-inside">
-							<mark>ESPECIFICACIONES:</mark>
-						</div>
-						<div class="content-text">
-							<p><mark>FORMATOS:</mark> JPG PNG GIF ZIP HTML</p>
-							<p><mark>PESO:</mark> Carga Sync: 150kb - Carga Async: 200kb</p>
-
-							<p><mark>Pieza original:</mark></p>
-
-							<p>
-
-Peso: max. Sync 150kb - Async 200kb <br>
-Formato de entrega: HTML5 - ZIP(assets y html)<br>
-Estilos: CSS Inline - JS Embed<br>
-Archivos externos: JPG - GIF - PNG - SVG Code o Base64<br>
-<br>
-Pieza Google Web Developer:<br>
-Paquete con el contenido.<br>
-<br>
-Pieza Rich Media - Third Party Tag:<br>
-Esta debe venir solo por tamaños especificados y solo una URL de campaña.
-
-</p>
-						</div>
-
-						<div class="content-text">
-							<p><mark>Observaciones:</mark></p>
-							<p>
-En caso de trabajar con SVG, incrustar solo el código, no adjuntar como archivo.<br>
-Se rechazan todas las piezas que llamen archivos externos (desde otros servidores).<br>
-Si se trabaja con librerías tales como: jQuery, plugins, etc. incrustar en el archivo y no llamar desde afuera, también deben ejecutar condiciones JS para no hacer doble llamado a las librerías.
-</p>
-						</div>
-					</div>
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>ADS:</mark>
-						</div>
-						<div class="image-info">
-							<img src="img/impacto-block.svg" alt="">
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>ADS:</mark>
+							</div>
+							<div class="image-info">
+								<img src="img/desktop-block.svg" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="box-specs">
-				<div class="title-box trama-md accordion" id="specs-three">
-					<div class="specs-titlebox">Display Mobile</div>
-					<div class="icon-box"><i class="icon ion-android-add"></i></div>
-				</div>
-				<div class="contentespecs-box" id="specs-three-cont">
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>INFORMACIÓN:</mark>
-						</div>
-						<div class="content-text">
-								<p>En mobile los formatos son: <mark>320×50</mark>, <mark>300×250</mark>, <mark>ITT(300×250)</mark> y <mark>Masthead(300×100)</mark>.</p>
-								<p>Tambien entran los formatos Rising Star de IAB, <mark>Filmstrip</mark>, <mark>Pull</mark>, <mark>Slider</mark> y más.</p>
+
+				<div class="box-specs">
+					<div class="title-box trama-md accordion" id="specs-two">
+						<div class="specs-titlebox">Display Alto Impacto</div>
+						<div class="icon-box"><i class="icon ion-android-add"></i></div>
+					</div>
+					<div class="contentespecs-box" id="specs-two-cont">
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>INFORMACIÓN:</mark>
+							</div>
+							<div class="content-text">
+								<p>Alto impacto considera formatos tales como <mark>ITT</mark>,<mark>PushDown</mark>, <mark>Masthead</mark>, <mark>Video</mark>, <mark>800x550</mark> y más.</p>
 								<p>En el caso de <mark>ITT</mark> estos deben venir con la imagen de cerrar aparte en <mark>PNG</mark> o <mark>SVG</mark>.</p>
+								<p>Los <mark>Videos</mark> deben estar en Youtube o enviar el formato original (mp4, mov, etc.) para su posterior almacenamiento.</p>
 							</div>
-						<div class="title-inside">
-							<mark>ESPECIFICACIONES:</mark>
+							<div class="title-inside">
+								<mark>ESPECIFICACIONES:</mark>
+							</div>
+							<div class="content-text">
+								<p><mark>FORMATOS:</mark> JPG PNG GIF ZIP HTML</p>
+								<p><mark>PESO:</mark> Carga Sync: 150kb - Carga Async: 200kb</p>
+
+								<p><mark>Pieza original:</mark></p>
+
+								<p>
+
+									Peso: max. Sync 150kb - Async 200kb <br>
+									Formato de entrega: HTML5 - ZIP(assets y html)<br>
+									Estilos: CSS Inline - JS Embed<br>
+									Archivos externos: JPG - GIF - PNG - SVG Code o Base64<br>
+									<br>
+									Pieza Google Web Developer:<br>
+									Paquete con el contenido.<br>
+									<br>
+									Pieza Rich Media - Third Party Tag:<br>
+									Esta debe venir solo por tamaños especificados y solo una URL de campaña.
+
+								</p>
+							</div>
+
+							<div class="content-text">
+								<p><mark>Observaciones:</mark></p>
+								<p>
+									En caso de trabajar con SVG, incrustar solo el código, no adjuntar como archivo.<br>
+									Se rechazan todas las piezas que llamen archivos externos (desde otros servidores).<br>
+									Si se trabaja con librerías tales como: jQuery, plugins, etc. incrustar en el archivo y no llamar desde afuera, también deben ejecutar condiciones JS para no hacer doble llamado a las librerías.
+								</p>
+							</div>
 						</div>
-						<div class="content-text">
-							<p><mark>FORMATOS:</mark> JPG PNG GIF ZIP HTML</p>
-							<p><mark>PESO:</mark> Carga Sync: 150kb - Carga Async: 200kb</p>
-
-							<p><mark>Pieza original:</mark></p>
-
-							<p>
-
-Peso: max. Sync 150kb - Async 200kb <br>
-Formato de entrega: HTML5 - ZIP(assets y html)<br>
-Estilos: CSS Inline - JS Embed<br>
-Archivos externos: JPG - GIF - PNG - SVG Code o Base64<br>
-<br>
-Pieza Google Web Developer:<br>
-Paquete con el contenido.<br>
-<br>
-Pieza Rich Media - Third Party Tag:<br>
-Esta debe venir solo por tamaños especificados y solo una URL de campaña.
-
-</p>
-						</div>
-
-						<div class="content-text">
-							<p><mark>Observaciones:</mark></p>
-							<p>
-En caso de trabajar con SVG, incrustar solo el código, no adjuntar como archivo.<br>
-Se rechazan todas las piezas que llamen archivos externos (desde otros servidores).<br>
-Si se trabaja con librerías tales como: jQuery, plugins, etc. incrustar en el archivo y no llamar desde afuera, también deben ejecutar condiciones JS para no hacer doble llamado a las librerías.
-</p>
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>ADS:</mark>
+							</div>
+							<div class="image-info">
+								<img src="img/impacto-block.svg" alt="">
+							</div>
 						</div>
 					</div>
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>ADS:</mark>
+				</div>
+
+				<div class="box-specs">
+					<div class="title-box trama-md accordion" id="specs-three">
+						<div class="specs-titlebox">Display Mobile</div>
+						<div class="icon-box"><i class="icon ion-android-add"></i></div>
+					</div>
+					<div class="contentespecs-box" id="specs-three-cont">
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>INFORMACIÓN:</mark>
+							</div>
+							<div class="content-text">
+									<p>En mobile los formatos son: <mark>320×50</mark>, <mark>300×250</mark>, <mark>ITT(300×250)</mark> y <mark>Masthead(300×100)</mark>.</p>
+									<p>Tambien entran los formatos Rising Star de IAB, <mark>Filmstrip</mark>, <mark>Pull</mark>, <mark>Slider</mark> y más.</p>
+									<p>En el caso de <mark>ITT</mark> estos deben venir con la imagen de cerrar aparte en <mark>PNG</mark> o <mark>SVG</mark>.</p>
+								</div>
+							<div class="title-inside">
+								<mark>ESPECIFICACIONES:</mark>
+							</div>
+							<div class="content-text">
+								<p><mark>FORMATOS:</mark> JPG PNG GIF ZIP HTML</p>
+								<p><mark>PESO:</mark> Carga Sync: 150kb - Carga Async: 200kb</p>
+
+								<p><mark>Pieza original:</mark></p>
+
+								<p>
+
+									Peso: max. Sync 150kb - Async 200kb <br>
+									Formato de entrega: HTML5 - ZIP(assets y html)<br>
+									Estilos: CSS Inline - JS Embed<br>
+									Archivos externos: JPG - GIF - PNG - SVG Code o Base64<br>
+									<br>
+									Pieza Google Web Developer:<br>
+									Paquete con el contenido.<br>
+									<br>
+									Pieza Rich Media - Third Party Tag:<br>
+									Esta debe venir solo por tamaños especificados y solo una URL de campaña.
+
+								</p>
+							</div>
+
+							<div class="content-text">
+								<p><mark>Observaciones:</mark></p>
+								<p>
+									En caso de trabajar con SVG, incrustar solo el código, no adjuntar como archivo.<br>
+									Se rechazan todas las piezas que llamen archivos externos (desde otros servidores).<br>
+									Si se trabaja con librerías tales como: jQuery, plugins, etc. incrustar en el archivo y no llamar desde afuera, también deben ejecutar condiciones JS para no hacer doble llamado a las librerías.
+								</p>
+							</div>
 						</div>
-						<div class="image-info">
-							<img src="img/mobile-block.svg" alt="">
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>ADS:</mark>
+							</div>
+							<div class="image-info">
+								<img src="img/mobile-block.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box-specs">
+					<div class="title-box trama-md accordion" id="specs-four">
+						<div class="specs-titlebox">Ad Serving</div>
+						<div class="icon-box"><i class="icon ion-android-add"></i></div>
+					</div>
+
+					<div class="contentespecs-box" id="specs-four-cont">
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>INFORMACIÓN:</mark>
+							</div>
+							<div class="content-text">
+									<p>Todos nuestros clientes son alojados en servidores de <mark>Google DoubleClick DFP</mark>, el cual nos entrega estabilidad, confianza y rapidez a la hora de hacer entrega de campañas a nuestro network.</p>
+									<p>Sin embargo siempre contamos con un plan B, así <mark>Media Trends</mark> ofrece un 100% de visibilidad en sus campañas, contamos con un <mark>AdServer </mark>instalado en nuestros servidores, operativos 100% las <mark>24 horas</mark> del día.</p>
+								</div>
+						</div>
+						<div class="half-box">
+							<div class="title-inside">
+								<mark>ADS:</mark>
+							</div>
+							<div class="image-info">
+								<div class="content-img">
+									<img src="img/doubleclick-google-logo.svg" class="image-size-md" alt="">
+									<img src="img/openx-logo.jpg.svg" alt="" class="image-size-md">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="box-specs">
-				<div class="title-box trama-md accordion" id="specs-four">
-					<div class="specs-titlebox">Ad Serving</div>
-					<div class="icon-box"><i class="icon ion-android-add"></i></div>
-				</div>
-				<div class="contentespecs-box" id="specs-four-cont">
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>INFORMACIÓN:</mark>
-						</div>
-						<div class="content-text">
-								<p>Todos nuestros clientes son alojados en servidores de <mark>Google DoubleClick DFP</mark>, el cual nos entrega estabilidad, confianza y rapidez a la hora de hacer entrega de campañas a nuestro network.</p>
-								<p>Sin embargo siempre contamos con un plan B, así <mark>Media Trends</mark> ofrece un 100% de visibilidad en sus campañas, contamos con un <mark>AdServer </mark>instalado en nuestros servidores, operativos 100% las <mark>24 horas</mark> del día.</p>
-							</div>
-					</div>
-					<div class="half-box">
-						<div class="title-inside">
-							<mark>ADS:</mark>
-						</div>
-						<div class="image-info">
-							<div class="content-img">
-								<img src="img/doubleclick-google-logo.svg" class="image-size-md" alt="">
-								<img src="img/openx-logo.jpg.svg" alt="" class="image-size-md">
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
+		</section>
+
+		<section class="sectionMt section-contact">
+
+			<div class="title-head">
+				<div class="additional-text">Malesuada fames</div>
+				<mark>Pellentesque habitant</mark>
+				<div class="line-div"></div>
+			</div>
+
+			<div class="form-contact">
+				<form action="">
+					<label class="label-form" for="name">Nombre</label>
+					<input class="bg-input" type="text" name="name">
+
+					<label class="label-form" for="empresa">Empresa</label>
+					<input class="bg-input" type="text" name="empresa">
+
+					<label class="label-form" for="email">E-mail</label>
+					<input class="bg-input" type="text" name="email">
+
+					<label class="label-form" for="telefono">telefono</label>
+					<input class="bg-input" type="text" name="telefono">
+
+					<label class="label-form" for="pais">Pais</label>
+					<input class="bg-input" type="text" name="pais">
+
+					<label class="label-form" for="ensaje">Mensaje</label>
+					<textarea class="bg-input bg-mensaje" name="mensaje" id="" cols="30" rows="10"></textarea>
+
+					<button class="btn-white" type="submit">Enviar</button> 
+
+				</form>
+			</div>
+
+		</section>
+
+		<div class="social-recomendation">
+			<div class="title-head">
+				<div class="additional-text">Malesuada fames</div>
+				<mark>Pellentesque habitant</mark>
+			</div> 
+			<div class="social-rrss">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				</ul>
 			</div>
 		</div>
+
 	</div>
 </body>
 </html>
