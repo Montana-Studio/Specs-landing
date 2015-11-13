@@ -4,6 +4,34 @@
 	<meta charset="UTF-8">
 	<title>MEDIATRENDS - SPECS</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta name="description" content="Descripcion corta">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Mediatrends">
+	<link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg" sizes="32x32">
+
+	<!-- for Google -->
+	<meta name="description" content="Specs de Mediatrends" />
+	<meta name="keywords" content="Specs, Mediatrends" />
+	<meta name="author" content="Mediatrends" />
+	<meta name="copyright" content="Mediantrends - 2015. Algunos derechos reservados. El contenido de este sitio está licenciado bajo CreativeCommons." />
+
+	<!-- for Facebook -->      
+	<meta property="og:title" content="Mediatrends">
+	<meta property="og:site_name" content="Mediatrends">
+	<meta property="og:url" content="http://desarrollo.adnativo.com/specs/app2/">
+	<meta property="og:description" content="Specs de Mediatrends">
+	<meta property="og:type" content="website">    
+	<meta property="og:image" content="http://desarrollo.adnativo.com/specs/app2/img/mediatrends_facebook.jpg" />
+	<meta property="fb:app_id" content="[1422584307958530]" /> 
+
+	<!-- for Twitter -->          
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@mediatrendscl">
+	<meta name="twitter:title" content="Mediatrends">
+	<meta name="twitter:description" content="Specs de Mediatrends">
+	<meta name="twitter:image:src" content="http://desarrollo.adnativo.com/specs/app2/img/mediatrends_facebook.jpg">
+
 	<link rel="stylesheet" href="css/icon.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
@@ -888,42 +916,48 @@
 				<div class="line-div"></div>
 			</div>
 
+			<div class="info-contacto"><mark>Fusce convallis sed nulla non pulvinar. Integer vestibulum sed justo nec malesuada. Etiam nisl libero, euismod eu metus sed, finibus consectetur nibh. Quisque malesuada metus ut sapien vehicula mattis. Aliquam posuere nisi et eros varius auctor. Cras consequat lobortis elementum. Donec commodo tellus sed neque pharetra congue.</mark></div>
+
 			<div class="form-contact">
 				<form action="">
 					<label class="label-form" for="name">Nombre</label>
-					<input class="bg-input" type="text" name="name">
+					<input class="bg-input" type="text" name="name" required>
 
 					<label class="label-form" for="empresa">Empresa</label>
-					<input class="bg-input" type="text" name="empresa">
+					<input class="bg-input" type="text" name="empresa" required>
 
 					<label class="label-form" for="email">E-mail</label>
-					<input class="bg-input" type="text" name="email">
+					<input class="bg-input" type="text" name="email" required>
 
 					<label class="label-form" for="telefono">telefono</label>
-					<input class="bg-input" type="text" name="telefono">
+					<input class="bg-input" type="text" name="telefono" required>
 
 					<label class="label-form" for="pais">Pais</label>
-					<input class="bg-input" type="text" name="pais">
+					<select class="bg-input" type="text" name="pais" required>
+						<option value="volvo">Opcion 1</option>
+						<option value="saab">Opcion 2</option>
+						<option value="mercedes">Opcion 3</option>
+						<option value="audi">Opcion 4</option>
+					</select>
 
 					<label class="label-form" for="ensaje">Mensaje</label>
-					<textarea class="bg-input bg-mensaje" name="mensaje" id="" cols="30" rows="10"></textarea>
+					<textarea class="bg-input bg-mensaje" name="mensaje" id="" cols="30" rows="10" required></textarea>
 
 					<button class="btn-white" type="submit">Enviar</button> 
 
 				</form>
 			</div>
-
 		</section>
 
-		<div class="social-recomendation">
+		<div class="social-recomendation hide-social" id="social-recomendacion">
 			<div class="title-head">
 				<div class="additional-text">Malesuada fames</div>
 				<mark>Pellentesque habitant</mark>
 			</div> 
 			<div class="social-rrss">
 				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="javascript: void(0);" onclick="window.open('http://www.facebook.com/sharer.php?u=http://desarrollo.adnativo.com/specs/app2/','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="javascript: void(0);" onclick="window.open('https://twitter.com/home?status=Specs%20de%20Mediatrends%20http%3A//local.mediatrends/Specs/htdocs/app2/','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');"><i class="fa fa-twitter"></i></a></li>
 				</ul>
 			</div>
 		</div>

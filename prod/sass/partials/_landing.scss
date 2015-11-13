@@ -6,28 +6,23 @@ body {
 	.container-All {
 		color:#fff;
 		@include row();	
-		@include span-columns(8);	
-		@include shift(2);
+		@include outer-container(60%);
 		@extend .center-div;
 		margin:{bottom:10px !important;}
-		@include media($notebook) {
-			@include span-columns(8);	
-			@include shift(2);	
-			margin:0 auto !important;
-			display: block;
-			float: none;
+		@include media($tabletLandTonotebook) {
+			@include outer-container(70%);
+		}
+		@include media($notebookTodesktop) {
+			@include outer-container(70%);
+		}
+		@include media($mobileLandTotablet) {
+			@include outer-container(80%);
+		}
+		@include media($mobileLand) {
+			@include outer-container(90%);
 		}
 		@include media($mobileTomobileLand) {
-			@include span-columns(10);
-			margin:0 auto 10px !important;
-			display: block;
-			float: none;
-		}		
-		@include media($mobile) {
-			@include span-columns(11.5);
-			margin:0 auto 20px !important;
-			display: block;
-			float: none;
+			@include outer-container(95%);
 		}
 		.sectionMt {
 			@include span-columns(12);
@@ -211,25 +206,48 @@ body {
 					color:$primary_color;
 					line-height: 1.25;
 					font:{size: 36px;family:$second_font;weight:bold;}
-					@include media($mobileTomobileLand){
-						font:{size:30px;}
+					@include media($mobileTomobileLand) {
+						font:{size:em(30);}
 					}	
 				}
 				.title-head {
 					float: none;
+				}
+				.info-contacto{
+					@include span-columns(9);
+					text:{align:left;}
+					margin:{top:5px;bottom:40px;}
+					@include media($tabletLandTonotebook) {
+						@include span-columns(12);
+					}
+					@include media($tablet) {
+				    	@include span-columns(12);
+				    }
+				    @include media($mobileTomobileLand) {
+				    	@include span-columns(12);
+				    }
+					mark {
+						font:{size:em(16)};
+						@include media($mobileLandTotablet) {
+					    	font:{size:em(14)};
+					    }
+					    @include media($mobileLand) {
+					    	font:{size:em(12)};
+					    }
+					    @include media($mobileTomobileLand) {
+					    	font:{size:em(12)};
+					    }
+					}
 				}
 				.form-contact {
 					font:{family:$second_font;}
 					@include outer-container(65%);
 					padding:{top:40px;bottom:20px;}
 					@include media($tabletLandTonotebook) {
-						@include outer-container(80%);
+						@include outer-container(70%);
 					}
 					@include media($tablet) {
-				    	@include outer-container(85%);
-				    }
-					@include media($tabletLandTonotebook) {
-				    	@include outer-container(90%);
+				    	@include outer-container(75%);
 				    }
 				    @include media($mobileLandTotablet) {
 				    	@include outer-container(100%);
@@ -252,7 +270,7 @@ body {
 		   					font:{size:15px;}
 		   				}
 		   				@include media($mobileTomobileLand) {
-					    	font:{size:em(11);}
+					    	font:{size:em(11);} 
 					    }
 					}
 					.bg-input {
@@ -265,17 +283,25 @@ body {
 						padding: 3px 20px;
 						outline: none;
 						margin:{bottom:20px;}
+						border:{radius:0 !important;}
 						@include media($tabletLandTonotebook) {
 							height: 40px;
 						}
 						@include media($mobileTomobileLand) {
 					    	height: 35px;
-					    	margin:{bottom:10px;}
+					    	margin:{bottom:15px;}
 					    }
 						&.bg-mensaje {
 							height: inherit;
 							padding: 10px 20px;
+							@include media($mobileTomobileLand) {
+						    	padding:5px;
+						    }
 						}
+					}
+					select {
+						-webkit-appearance: none;
+						-webkit-border-radius: 0px;
 					}
 				}
 			}	
@@ -286,12 +312,23 @@ body {
 			position: fixed;
 			right:20px;
 			top:20px;
+			opacity: 0;
 			@include media($tabletLandTonotebook) {
 				@include span-columns(3);
 			}
 			@include media($mobileTomobileLand) {
 			    @include span-columns(6);
 			}
+			@include media($tablet) {
+		    	@include span-columns(4);
+		    }
+		    @include media($mobileLand) {
+		    	@include span-columns(6);
+		    }
+		    @include media($mobileTomobileLand) {
+		    	@include span-columns(12);
+		    	position:initial;
+		    }
 			.title-head {
 				@include span-columns(12);
 				text:{align:right;}
@@ -303,7 +340,27 @@ body {
 					line-height: 1.25;
 					font:{size:em(15);family:$second_font;}
 					text:{align:right;}
-					float: right;
+					@include media($tabletLandTonotebook) {
+						float: right;
+						clear: both;
+					}
+					@include media($notebookTodesktop) {
+						float: right;
+						clear: both;
+					}
+					@include media($mobileLandTotablet) {
+						float: right;
+						clear: both;
+					}
+					@include media($mobileLand) {
+						float: right;
+						clear: both;
+					}
+					@include media($mobileTomobileLand) {
+						display: table;
+						margin: 0 auto;
+						clear: both;
+					}
 				}
 				.additional-text {
 					@include pad(0 5px);
@@ -313,6 +370,13 @@ body {
 	   				text:{align:right;}
 	   				font:{size:em(13);family:$second_font;}
 	   				float: right;	
+	   				@include media($mobileTomobileLand) {
+						text-align: center;
+    					display: table;
+						clear: both;
+						margin: 0 auto;
+						float: none; 
+					}
 				}
 				.line-div {
 					text:{align:right;}
@@ -334,6 +398,11 @@ body {
 					@include media($tabletLandTonotebook) {
 						margin:{top:8px;}
 					}
+					@include media($mobileTomobileLand) {
+						margin:{top:10px;}
+						@include span-columns(12);
+						text:{align:center;}
+					}
 					li {
 						text:{align:center;}
 						height: 40px;
@@ -349,6 +418,12 @@ body {
 							width: 30px;
 						}
 						@extend .trama-md;
+						@include media($mobileTomobileLand) {
+						    background: #fff !important;
+						   	margin:{right:10px;} 
+						   	height: 35px;
+							width: 35px;
+						}
 						a {
 							width: 100%;
 							height: 100%;
@@ -357,6 +432,9 @@ body {
 							font:{size:em(22)};
 							@include media($tabletLandTonotebook) {
 								font:{size:em(17)};
+							}
+							@include media($mobileTomobileLand) {
+							    font:{size:em(24)};
 							}
 							i {
 								display:table-cell;

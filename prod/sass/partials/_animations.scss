@@ -1,0 +1,14 @@
+.show-social {
+	@include animation(show-social .5s ease-in-out forwards);
+}
+@include keyframes(show-social) {
+    0% { opacity: 0; }
+   	100% { opacity: 1; }
+}
+.hide-social {
+	@include animation(hide-social .5s ease-in-out forwards);
+}
+@include keyframes(hide-social) {
+    0% { opacity: 0; }
+   	100% { opacity: 0; }
+}
