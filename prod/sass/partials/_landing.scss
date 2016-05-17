@@ -177,6 +177,7 @@ body {
 									img {
 										display: block;
 		    							background-color: white;
+		    							margin:{bottom:10px;}
 									}
 									.content-img {
 										@include span-columns(12);

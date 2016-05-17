@@ -352,7 +352,8 @@ body {
                       text-transform: uppercase; } }
               body .container-All .sectionMt.section-specs .content-specs .box-specs .contentespecs-box .half-box .image-info img {
                 display: block;
-                background-color: white; }
+                background-color: white;
+                margin-bottom: 10px; }
               body .container-All .sectionMt.section-specs .content-specs .box-specs .contentespecs-box .half-box .image-info .content-img {
                 float: left;
                 display: block;

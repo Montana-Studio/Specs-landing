@@ -4,6 +4,8 @@ $(document).ready(function() {
 		$('#specs-two').removeClass('trama-bg-inv');
 		$('#specs-three').removeClass('trama-bg-inv');
 		$('#specs-four').removeClass('trama-bg-inv');
+		$('#specs-five').removeClass('trama-bg-inv');
+		$('#specs-six').removeClass('trama-bg-inv');
 	});
 
 	$('#specs-two').click(function(){
@@ -11,6 +13,8 @@ $(document).ready(function() {
 		$('#specs-one').removeClass('trama-bg-inv');
 		$('#specs-three').removeClass('trama-bg-inv');
 		$('#specs-four').removeClass('trama-bg-inv');
+		$('#specs-five').removeClass('trama-bg-inv');
+		$('#specs-six').removeClass('trama-bg-inv');
 		
 	});
 	$('#specs-three').click(function(){
@@ -18,6 +22,8 @@ $(document).ready(function() {
 		$('#specs-one').removeClass('trama-bg-inv');
 		$('#specs-two').removeClass('trama-bg-inv');
 		$('#specs-four').removeClass('trama-bg-inv');
+		$('#specs-five').removeClass('trama-bg-inv');
+		$('#specs-six').removeClass('trama-bg-inv');
 		
 	});
 	$('#specs-four').click(function(){
@@ -25,6 +31,26 @@ $(document).ready(function() {
 		$('#specs-one').removeClass('trama-bg-inv');
 		$('#specs-two').removeClass('trama-bg-inv');
 		$('#specs-three').removeClass('trama-bg-inv');
+		$('#specs-five').removeClass('trama-bg-inv');
+		$('#specs-six').removeClass('trama-bg-inv');
+	});
+
+	$('#specs-five').click(function(){
+		$(this).toggleClass( 'trama-bg-animation trama-bg-inv');
+		$('#specs-one').removeClass('trama-bg-inv');
+		$('#specs-two').removeClass('trama-bg-inv');
+		$('#specs-three').removeClass('trama-bg-inv');
+		$('#specs-four').removeClass('trama-bg-inv');
+		$('#specs-six').removeClass('trama-bg-inv');
+	});
+
+	$('#specs-six').click(function(){
+		$(this).toggleClass( 'trama-bg-animation trama-bg-inv');
+		$('#specs-one').removeClass('trama-bg-inv');
+		$('#specs-two').removeClass('trama-bg-inv');
+		$('#specs-three').removeClass('trama-bg-inv');
+		$('#specs-four').removeClass('trama-bg-inv');
+		$('#specs-five').removeClass('trama-bg-inv');
 	});
 
 	$('.accordion').accordion({defaultOpen: '#specs-one'});
